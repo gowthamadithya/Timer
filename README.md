@@ -47,3 +47,18 @@ Run the following command to create a release build:
 ./gradlew assembleRelease
 ```
 The APK will be located in android/app/build/outputs/apk/release/app-release.apk.
+
+
+#Note
+
+  Run instructions for Android:
+    • Have an Android emulator running (quickest way to get started), or a device connected.
+    • cd "/workspaces/Timer-DoTimely/Timer" && npx react-native run-android
+
+
+
+Key Changes for React Native Version
+UI Components: Replace HTML tags (e.g., <input>, <button>, <div>, etc.) with React Native components (TextInput, Button, View).
+State and Props: Use similar state management for timers but add improvements for better interaction on mobile.
+Notifications: Since this app should notify the user when a timer reaches zero, include a function to simulate alerts when each timer ends.
+Styling: Use React Native's StyleSheet for consistent styling across devices.
